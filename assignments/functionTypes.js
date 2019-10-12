@@ -43,11 +43,54 @@ convertToString(21); // "21"
  * @return {number}
  */
 
+//Function Decleration
+function addOne(n){
+  return (n+1);
+}
+
+// Function Expression
+let addOne = function(n){
+  return (n+1);
+}
+
+// Arrow Function
+let addOne = n => (n+1) ;
+
+// Arrow Function With Curly Bracket
+let addOne = n => {
+  return (n+1);
+}
+
+// Function Invocation
+addOne(6); //7
+
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
+
+
+//Function Decleration
+function subOne(n){
+  return (n-1);
+}
+
+// Function Expression
+let subOne = function(n){
+  return (n-1);
+}
+
+// Arrow Function
+let subOne = n => (n-1) ;
+
+// Arrow Function With Curly Bracket
+let subOne = n => {
+  return (n-1);
+}
+
+// Function Invocation
+subOne(6); //5
 
 /**
  * Adds two numbers.
@@ -56,12 +99,55 @@ convertToString(21); // "21"
  * @return {number} the sum
  */
 
+ //Function Decleration
+function add(x,y){
+  return (x+y);
+}
+
+// Function Expression
+let add = function(x,y){
+  return (x+y);
+}
+
+// Arrow Function
+let add = (x,y) => (x+y) ;
+
+// Arrow Function With Curly Bracket
+let add = (x,y) => {
+  return (x+y);
+}
+
+// Function Invocation
+add(6,7); // 13
+
+
 /**
  * Subtracts the second number from the first.
  * @param {number} x
  * @param {number} y
  * @return {number} the difference
  */
+
+ //Function Decleration
+function sub(x,y){
+  return (x-y);
+}
+
+// Function Expression
+let sub = function(x,y){
+  return (x-y);
+}
+
+// Arrow Function
+let sub = (x,y) => (x-y) ;
+
+// Arrow Function With Curly Bracket
+let sub = (x,y) => {
+  return (x-y);
+}
+
+// Function Invocation
+sub(6,7); //-1
 
 /**
  * Multiplies two numbers.
@@ -70,19 +156,80 @@ convertToString(21); // "21"
  * @return {number} the product
  */
 
+  //Function Decleration
+function mul(x,y){
+  return (x*y);
+}
+
+// Function Expression
+let mul = function(x,y){
+  return (x*y);
+}
+
+// Arrow Function
+let mul = (x,y) => (x*y) ;
+
+// Arrow Function With Curly Bracket
+let mul = (x,y) => {
+  return (x*y);
+}
+
+// Function Invocation
+mul(6,7); //42
+
+
 /**
  * Divides the first number by the second.
  * @param {number} x
  * @param {number} y
  * @return {number} the quotient
  */
-
+  //Function Decleration
+  function div(x,y){
+    return (x/y);
+  }
+  
+  // Function Expression
+  let div = function(x,y){
+    return (x/y);
+  }
+  
+  // Arrow Function
+  let div = (x,y) => (x/y) ;
+  
+  // Arrow Function With Curly Bracket
+  let div = (x,y) => {
+    return (x/y);
+  }
+  
+  // Function Invocation
+  div(6,7); //0.8571428571428571
+  
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
+  //Function Decleration
+  function sqr(x){
+    return (x*x);
+  }
+  
+  // Function Expression
+  let sqr = function(x){
+    return (x*x);
+  }
+  
+  // Arrow Function
+  let sqr = (x) => (x*x) ;
+  
+  // Arrow Function With Curly Bracket
+  let sqr = (x) => {
+    return (x*x);
+  }
+  
+  // Function Invocation
+  sqrd(6); //36
 /**
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
@@ -91,6 +238,66 @@ convertToString(21); // "21"
  * @param {number} y
  * @return {number} the result
  */
+  //Function Decleration
+  function maths (operation, x, y) {
+    if(operation == "add"){
+      let addNo = (x + y);
+      return (`x + y = ${addNo}`);
+    }
+    else if(operation == "sub"){
+      let subNo = (x - y);
+      return (`x - y = ${subNo}`);
+    }
+    else if(operation == "mul"){
+      let mulNo = (x * y);
+      return (`x * y = ${mulNo}`);
+    }
+    else {
+      return (`x / y = ${x/y}`);
+    }
+  }
+  
+  // Function Expression
+  let maths = function (operation, x, y) {
+    if(operation == "add"){
+      let addNo = (x + y);
+      return (`x + y = ${addNo}`);
+    }
+    else if(operation == "sub"){
+      let subNo = (x - y);
+      return (`x - y = ${subNo}`);
+    }
+    else if(operation == "mul"){
+      let mulNo = (x * y);
+      return (`x * y = ${mulNo}`);
+    }
+    else {
+      return (`x / y = ${x/y}`);
+    }
+  }
+    
+  
+  // Arrow Function With Curly Bracket
+  let maths = (operation, x, y) => {
+    if(operation == "add"){
+      let addNo = (x + y);
+      return (`x + y = ${addNo}`);
+    }
+    else if(operation == "sub"){
+      let subNo = (x - y);
+      return (`x - y = ${subNo}`);
+    }
+    else if(operation == "mul"){
+      let mulNo = (x * y);
+      return (`x * y = ${mulNo}`);
+    }
+    else {
+      return (`x / y = ${x/y}`);
+    }
+  }
+  
+  // Function Invocation
+  maths ("sub", 4, 4); 
 
 /**
  * Returns true if `a` is greater than `b`.
@@ -157,3 +364,23 @@ convertToString(21); // "21"
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+
+   //Function Decleration
+   function join(word1,word2){
+    return (word1 + " " + word2);
+  }
+  
+  // Function Expression
+  let join = function(word1,word2){
+    return (word1 + " " + word2);
+  }
+  
+  // Arrow Function
+  let join = (word1,word2) => (word1 + " " + word2) ;
+  
+  // Arrow Function With Curly Bracket
+  let join = (word1,word2) => {
+    return (word1 + " " + word2);
+  }
+  // Function Invocation
+  join ("abc","xyz");
